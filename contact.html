@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name='viewport'
+          content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <title>Awesome!</title>
+    <link href='contact.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+<div class='header'>
+    <div class='logo'><img src="images/logo.png" alt="logo"></div>
+    <ul class='menu'>
+        <div class="menu_points">
+            <li class='dropdown'><span>Features &#9662;</span>
+                <ul class='features-menu'>           <!-- Start of submenu -->
+                    <li><a target="_blank" href='#'>Home</a></li>
+                    <li><a class="not_click" target="_blank" href='#' >Contact</a></li>
+                    <li><a target="_blank" href='#'>About</a></li>
+                </ul>                                <!-- End of submenu -->
+            </li>
+            <li><a target="_blank" href='#'>Home</a></li>
+            <li><a class="not_click" target="_blank" href='#' >Contact</a></li>
+            <li><a target="_blank" href='#'>About</a></li>
+        </div>
+        <div class="socials">
+            <li class="social"><a target="_blank" href="http://facebook.com">
+                <img src="images/facebook.png" alt="icon">
+            </a></li>
+            <li class="social"><a target="_blank"  href='https://instagram.com'>
+                <img src="images/instagram.png" alt="icon">
+            </a></li>
+            <li class="social"><a target="_blank" href='https://linkedin.com'>
+                <img src="images/linkedin.png" alt="icon">
+            </a></li>
+        </div>
+    </ul>
+
+</div>
+<header class='form-header'>
+    <h1>Contact me</h1>
+    <p><em>Do you have any question? Fill out
+        this form.</em></p>
+</header>
+<form action='' method='get' class='contact-form'>
+    <div class='form-row'>
+        <label for='first-name'>First Name</label>
+        <input id='first-name' name='first-name' type='text'/>
+    </div>
+    <div class='form-row'>
+        <label for='last-name'>Last Name</label>
+        <input id='last-name' name='full-name' type='text'/>
+    </div>
+    <div class='form-row'>
+        <label for='email'>Email</label>
+        <input id='email' name='email' type='email' placeholder='joe@example.com'/>
+    </div>
+    <fieldset class='legacy-form-row'>
+        <legend>Question type</legend>
+        <div class="one_row">
+            <input id='personal' name='question-type' type='radio' value='personal'/>
+            <label for='personal' class='radio-label'>Personal</label>
+        </div>
+        <div class="one_row">
+            <input id='business' name='question-type' type='radio' value='business' checked/>
+            <label for='business' class='radio-label'>Business</label>
+        </div>
+    </fieldset>
+
+    <div class='form-row'>
+        <label for='question'>Question</label>
+        <div>
+            <textarea id='question' name='question' placeholder="Ask something" required></textarea>
+        </div>
+    </div>
+    <div class='form-row'>
+        <label class='checkbox-label' for='available'>
+            <input id='available' name='available' type='checkbox' value='is-available'/>
+            <span>I consent to the storage of my data </span>
+        </label>
+    </div>
+    <div class='submit'>
+        <button>Submit</button>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 450px) {
+    body {
+        font-size: 18px;
+        font-family: sans-serif
+    }
+    .menu .menu_points > li {
+        display: none;
+    }
+    .menu .menu_points .dropdown{
+        display: inline;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+    body {
+        font-size: 18px;
+        font-family: sans-serif;
+    }
+    .menu .menu_points li {
+        display: inline;
+        margin-right: 2em;
+    }
+    .menu .menu_points .dropdown{
+        display: none;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    body {
+        font-size: 18px;
+        font-family: sans-serif;
+    }
+    .menu .menu_points li {
+        display: inline;
+        margin-right: 2em;
+    }.menu .menu_points .dropdown{
+         display: none;
+     }
+}
+.logo img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+
+a:link,
+a:visited {
+    color: #5D6063;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 0 1em;
+    background: lightgrey;
+}
+
+.menu {
+    margin-top: 0.4em;
+    display: inline-flex;
+}
+
+
+
+.menu .socials li {
+    display: inline-grid;
+    margin-right: 0.3em;
+}
+
+.menu > li:last-of-type {
+    margin-right: 1em;
+}
+.features-menu {
+    display: flex;
+    flex-direction: column;
+    background: #B2D6FF;
+    border-radius: 0.5em;
+    padding-top: 4em;
+    position: absolute;
+    top: -1.4em;
+    left: -1.4em;
+    z-index: 1;
+}
+
+.features-menu li {
+    list-style: none;
+    border-top: 0.1em solid #FFF;
+
+    margin: 0 40px 0 20px;
+    padding: 20px 0 20px 10px;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown > span {
+    z-index: 2;
+    position: relative;  /* This is important! */
+    cursor: pointer;
+}
+.dropdown:hover .features-menu {    /* This used to be `.features-menu` */
+    display: flex;                    /* Leave everything else alone */
+    flex-direction: column;
+}
+.features-menu {                    /* Add this as a new rule */
+    display: none;
+}
+.sidebar{
+    display: flex;
+    padding-top: 3em;
+    justify-content: center;
+    overflow: hidden;
+    width: 30%;
+}
+.everything_else{
+    padding: 2em;
+}
+.social img{
+    width: 1em;
+    height: 1em;
+}
