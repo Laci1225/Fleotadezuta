@@ -53,15 +53,14 @@
     border-radius: 50%;
 }
 
-a:link,
-a:visited {
+li a:link,
+li a:visited {
     color: #5D6063;
     text-decoration: none;
 }
-a:hover {
+li a:hover {
     text-decoration: underline;
 }
-
 .header {
     position: fixed;
     display: flex;
@@ -134,4 +133,7 @@ a:hover {
 .social img{
     width: 1em;
     height: 1em;
+}
+.not_click {
+    pointer-events: none;
 }
